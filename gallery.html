@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ sưu tập - Grid Layout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Yêu cầu 4: Skip link -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gallery.html">Bộ sưu tập (Grid)</a></li>
+                <li><a href="about.html">Giới thiệu (Flex)</a></li>
+            </ul>
+        </nav>
+        <h1>Bộ sưu tập ảnh (CSS Grid & nth-child)</h1>
+    </header>
+
+    <main id="main-content">
+        <p>Trang này sử dụng bố cục <strong>CSS Grid</strong> với 3 cột và áp dụng bộ chọn <code>:nth-child</code> để tạo hình dạng độc đáo cho từng khung ảnh.</p>
+        
+        <!-- Yêu cầu 1: Có ít nhất 5 ảnh (ở đây có 6 ảnh) -->
+        <div class="image-grid">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Bãi biển xanh">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400" alt="Rừng cây buổi sáng">
+            <img src="https://images.unsplash.com/photo-1426604966848-d7adacbd02bff?w=400" alt="Ngọn núi hùng vĩ">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400" alt="Thung lũng xanh">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400" alt="Bầu trời đầy sao">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400" alt="Đỉnh núi tuyết">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Thiết kế bởi Nguyễn Hồng Quân</p>
+    </footer>
+</body>
+</html>
