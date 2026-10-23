@@ -1,1 +1,78 @@
+/* Style cơ bản chung */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    background-color: #eef2f3;
+    padding: 10px;
+}
+
+/* Đổi nav thành inline-block và width khoảng 80% */
+nav {
+    background-color: #dfe6e9;
+    display: inline-block;
+    width: 80%;
+}
+
+main {
+    background-color: #f5f6fa;
+    font-size: 15px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #eef2f3;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Comment out quy tắc li cũ theo yêu cầu */
+/*
+li {
+    display: inline-block;
+    width: 150px;
+}
+*/
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Dùng descendant selector để style ảnh trong nav có width khoảng 10% */
+nav img {
+    width: 10%;
+}
+
+/* Style class grid thành 2 cột (~40% mỗi cột), canh giữa và tạo khoảng cách hàng */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/* Dùng descendant selector để style các ảnh bên trong class grid có width 100% */
+.grid img {
+    width: 100%;
+}
+
+/* Style class flex sử dụng flex, thiết lập wrap và justify-content */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
