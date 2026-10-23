@@ -1,105 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Michigan - The Great Lakes State</title>
-    <!-- Tailwind CSS CDN for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Springtime In Michigan</title>
+  <!-- You will need to link to the CSS file -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between">
 
-    <!-- 1st Semantic Tag: header -->
-    <header class="bg-blue-900 text-white py-8 px-4 shadow-md">
-        <div class="max-w-4xl mx-auto text-center">
-            <!-- Requirement: <h1> heading -->
-            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-2">Discover Michigan</h1>
-            <p class="text-blue-200 text-lg">Fun facts and landmarks of The Great Lakes State</p>
-        </div>
-    </header>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
+        <li><a href="parks.html">Walks in the Park</a></li>
+      </ul>
+    </nav>
+    <img src="images/BaconGallupPark.jpg" width="200" alt="Brown Labradoodle sitting next to a statue.">
+    <h1>Springtime in Michigan</h1>
+  </header>
+  <main>
+    <p>Springtime in <a href="https://www.michigan.org/city/ann-arbor">Ann Arbor</a> is a beautiful time. Even though
+      it can be chilly at times, it is nice to walk my dog Bacon. This site includes some pictures I have taken on
+      these walks. </p>
 
-    <!-- 2nd Semantic Tag: main -->
-    <main class="max-w-4xl mx-auto p-4 sm:p-6 flex-grow w-full">
-        
-        <!-- Intro Section -->
-        <section class="mb-10 bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-            <!-- Proper Heading Hierarchy: h2 following h1 -->
-            <h2 class="text-2xl font-bold text-blue-900 mb-4 pb-2 border-b border-slate-200">About Michigan</h2>
-            <p class="text-slate-700 leading-relaxed mb-4">
-                Michigan is a state located in the Great Lakes region of the Upper Midwestern United States. It is famous for its natural beauty, rich industrial history, and extensive freshwater coastline.
-            </p>
-            <!-- External Link Requirement -->
-            <p class="text-slate-700">
-                To learn more about travel destinations, visit the 
-                <a href="https://www.michigan.org" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline font-semibold">
-                    Official Pure Michigan Travel Site
-                </a>.
-            </p>
-        </section>
+    <p>Sometimes we walk around the neighborhood, other times we make it to the woods. Ann Arbor also has some
+      beautiful lakes and rivers including the <a
+        href="https://www.annarbor.org/things-to-do/recreation-outdoors/huron-river/">Huron River Watertrail</a> and
+      the <a href="https://www.a2gov.org/departments/Parks-Recreation/parks-places/argo/pages/default.aspx">Argo Park
+        Cascades</a>.</p>
 
-        <!-- List Section -->
-        <section class="mb-10 bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-            <h2 class="text-2xl font-bold text-blue-900 mb-4 pb-2 border-b border-slate-200">Top 5 Michigan Quick Facts</h2>
-            <!-- Requirement: List with at least 3 items -->
-            <ul class="list-disc list-inside space-y-2 text-slate-700">
-                <li class="pl-2"><strong class="text-slate-900">Great Lakes Coastline:</strong> Michigan has the longest freshwater coastline of any political subdivision in the world.</li>
-                <li class="pl-2"><strong class="text-slate-900">Two Peninsulas:</strong> It is the only U.S. state to consist of two distinct peninsulas (Upper and Lower).</li>
-                <li class="pl-2"><strong class="text-slate-900">State Tree:</strong> The official state tree is the Eastern White Pine.</li>
-                <li class="pl-2"><strong class="text-slate-900">Automotive Capital:</strong> Detroit, Michigan is historically recognized as the heart of the American automotive industry.</li>
-                <li class="pl-2"><strong class="text-slate-900">No Spot Far From Water:</strong> You are never more than 6 miles from a natural water source anywhere in the state.</li>
-            </ul>
-        </section>
-
-        <!-- Gallery Section -->
-        <section class="mb-10 bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-            <h2 class="text-2xl font-bold text-blue-900 mb-6 pb-2 border-b border-slate-200">Michigan Landmarks</h2>
-            <!-- Requirement: 3 Images with valid src and descriptive alt text -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Image 1 -->
-                <figure class="flex flex-col items-center bg-slate-50 p-3 rounded-lg border border-slate-200">
-                    <img 
-                        src="https://images.unsplash.com/photo-1572620190441-2a21e7d0d087?auto=format&fit=crop&w=600&q=80" 
-                        alt="The iconic Mackinac Bridge spanning across blue waters connecting Michigan's Upper and Lower Peninsulas" 
-                        class="w-full h-48 object-cover rounded-md mb-3"
-                    >
-                    <figcaption class="text-sm font-medium text-slate-700 text-center">Mackinac Bridge</figcaption>
-                </figure>
-
-                <!-- Image 2 -->
-                <figure class="flex flex-col items-center bg-slate-50 p-3 rounded-lg border border-slate-200">
-                    <img 
-                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" 
-                        alt="Pictured Rocks National Lakeshore featuring colorful sandstone cliffs along Lake Superior" 
-                        class="w-full h-48 object-cover rounded-md mb-3"
-                    >
-                    <figcaption class="text-sm font-medium text-slate-700 text-center">Pictured Rocks Lakeshore</figcaption>
-                </figure>
-
-                <!-- Image 3 -->
-                <figure class="flex flex-col items-center bg-slate-50 p-3 rounded-lg border border-slate-200">
-                    <img 
-                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" 
-                        alt="Dense green pine forest during autumn sunrise in Michigan's Upper Peninsula" 
-                        class="w-full h-48 object-cover rounded-md mb-3"
-                    >
-                    <figcaption class="text-sm font-medium text-slate-700 text-center">Upper Peninsula Forest</figcaption>
-                </figure>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- 3rd Semantic Tag: footer -->
-    <footer class="bg-slate-800 text-slate-300 py-6 px-4 text-center text-sm">
-        <p>&copy; 2026 Michigan Facts Project. Created for Web Development Fundamentals.</p>
-    </footer>
+  </main>
+  <footer>
+    <p>This page was originally created by Colleen van Lent for the <a
+        href="https://www.coursera.org/specializations/web-design"> Web Design for Everybody</a> Specialization.
+      Specialization. Students are invited to make changes.</p>
+  </footer>
 
 </body>
+
 </html>
